@@ -1,0 +1,46 @@
+header {
+  height: 12vh;
+  background-color: gray;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+h1 {
+  color: #fff;
+}
+
+.search-icon {
+  width: 10px;
+}
+
+.header-search-bar {
+  display: flex;
+}
+
+.header-menu-burger {
+  width: 15px;
+  height: 20px;
+  background-color: red;
+  border: 1px solid #000;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-left: 10px;
+  display: flex;
+}
+
+.menu-burger-form {
+  width: 10px;
+  height: 2px;
+  background-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=index.e8265c92.css.map */
