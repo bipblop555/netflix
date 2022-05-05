@@ -1,0 +1,101 @@
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background: rgb(0, 47, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 47, 119, 1) 21%,
+    rgba(101, 7, 142, 1) 69%
+  );
+}
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+h2 {
+  text-align: center;
+}
+.main-container-image {
+  width: 60%;
+  height: auto;
+  transition: 0.3s;
+  cursor: pointer;
+  border: black 2px solid;
+  border-radius: 20px;
+  @include landscape {
+    border: none;
+    border-radius: 20px;
+  }
+}
+.main-container-image:hover {
+  @include landscape {
+    transform: scale(1.1);
+    border: solid 2px black;
+    border-radius: 0px;
+    //filter: blur(4px);
+  }
+}
+
+.main-container-text {
+  width: 80%;
+  overflow: scroll;
+  height: 16vh;
+  text-align: center;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px 0;
+  border-radius: 20px;
+  background-color: bisque;
+
+  @include landscape {
+    width: 23%;
+  }
+}
+.count {
+  text-align: center;
+  color: white;
+}
+.btn_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+}
+.btn_page button {
+  padding: 10px;
+  background-color: bisque;
+  cursor: pointer;
+  margin: 0 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.btn_page button:hover {
+  color: white;
+  background-color: black;
+  transform: scale(1.1);
+}
+.is-hidden {
+  display: none;
+}
+
+.btn-more-information {
+  margin-top: 10px;
+  padding: 5px;
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+.page_form {
+  color: white;
+}

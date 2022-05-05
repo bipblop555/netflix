@@ -1,0 +1,70 @@
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+.player {
+  width: 80%;
+  height: 80vh;
+  background-color: bisque;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 30px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  border: 2px solid black;
+  z-index: 900;
+
+  @include landscape {
+  }
+}
+.player-is-active {
+  display: flex;
+}
+.player button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  padding: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.player button:hover {
+  background-color: black;
+  color: white;
+}
+.player-synopsis {
+  height: 20%;
+  overflow: scroll;
+}
+.player-image {
+  width: auto;
+  height: 40vh;
+  @include landscape {
+    width: auto;
+    height: 60vh;
+  }
+}
+.blur-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 47, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 47, 119, 1) 21%,
+    rgba(101, 7, 142, 1) 69%
+  );
+  z-index: 800;
+}
