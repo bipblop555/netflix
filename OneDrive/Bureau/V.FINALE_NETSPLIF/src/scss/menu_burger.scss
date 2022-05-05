@@ -1,0 +1,80 @@
+.menu {
+  display: inline;
+  font-weight: 900;
+  font-size: 2.5625rem;
+}
+.menu:hover {
+  cursor: pointer;
+}
+.menu {
+  background-color: yellow;
+}
+.whole {
+  position: absolute;
+}
+.menu__burger {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Genre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.courants:hover{
+  background-color:rgb(228, 187, 222) ;
+  cursor: pointer;
+}
+#BroButton:hover{
+  background-color:rgb(228, 187, 222) ;
+  cursor: pointer;
+}
+.randomize:hover{
+  background-color:rgb(228, 187, 222) ;
+  cursor: pointer;
+}
+.border-whole {
+  position: fixed;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: bisque;
+  width: 300px;
+  height: 500px;
+  padding: 10px;
+  border-radius: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.btn-close-menu-burger {
+  float: right;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid purple;
+  cursor: pointer;
+}
+.btn-close-menu-burger:hover {
+  color: white;
+  background-color: rgb(225, 154, 228);
+}
+.bar-menu {
+  border: 1px solid black;
+  width: 100%;
+}
+.menu-burger-is-active {
+  display: flex;
+}
+.style{
+  border:1px solid purple;
+  margin:2px;
+  padding: 4px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+}

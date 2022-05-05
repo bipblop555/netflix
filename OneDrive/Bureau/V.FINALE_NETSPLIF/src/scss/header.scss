@@ -1,0 +1,62 @@
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+header {
+  background-color: rgb(66, 55, 78);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 12vh;
+}
+h1 {
+  color: white;
+  margin-left: 20px;
+}
+.Netsplif-logo {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.Netsplif-logo:hover {
+  transform: scale(1.2);
+}
+form {
+  display: flex;
+}
+input {
+  width: 70px;
+  @include landscape {
+    width: 100%;
+  }
+}
+#search{
+
+}
+.search-icon {
+  width: 10px;
+}
+.header-search-bar {
+  display: flex;
+  margin-right: 20px;
+}
+.header-menu-burger {
+  margin-left: 10px;
+  margin-top: 4px;
+  width: 15px;
+  height: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.menu-burger-form {
+  width: 10px;
+  height: 2px;
+  background-color: black;
+}
